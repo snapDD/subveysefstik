@@ -593,9 +593,9 @@ a .header{
   z-index: 99;
   position: relative;
   bottom: 255px;
-  left: 500px;
-  width: 40%;
-  height: 41%;
+  left: 450px;
+  width: 46%;
+  height: 37%;
 }
 
 .features_image2{
@@ -695,7 +695,7 @@ a .header{
 }
 
 .partrers{
-  height: 400px;
+  height: 500px;
   margin-top: 100px;
   display: flex;
   flex-direction: column ;
@@ -755,8 +755,8 @@ a .header{
 }
 
 .testiomonials {
-  margin-top: 100px;
-  height:1000px;
+  margin-top: 50px;
+  height: 900px;
   flex-direction: column ;
   align-items: center;
   justify-content: space-between;
