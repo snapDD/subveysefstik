@@ -752,7 +752,7 @@ a .header{
 
 .tile__image img{
   position: relative;
-  bottom: 16px;
+  bottom: 16.5px;
   left: 59px;
   border-bottom-right-radius: 33px;
   height: 410px;
