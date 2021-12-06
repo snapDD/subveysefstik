@@ -321,5 +321,22 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            let headerOpen = document.querySelector('.header_burger');
+            let headerClose = document.querySelector('.header_close');
+            let headerNav = document.querySelector('.header_nav');
+
+            headerOpen.addEventListener('click', function(e){
+                headerNav.classList.add('active');
+
+            });
+
+            headerClose.addEventListener('click', function(e){
+                headerNav.classList.remove('active');
+
+            });
+        </script>
+
     </body>
 </html>

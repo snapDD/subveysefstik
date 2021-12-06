@@ -658,7 +658,7 @@ a .header{
 .contents_items{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   padding-bottom: 3%;
   height:600px;
@@ -772,32 +772,31 @@ a .header{
   color: #FFFFFF;
 }
 
-.tile_title{
+.tile__title{
     display: flex;
     flex-direction: column ;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
+    margin-left: 4rem;
 }
 
+
 .tile__image img{
-  position: relative;
-  bottom: 16.5px;
-  left: 59px;
-  border-bottom-right-radius: 33px;
-  height: 410px;
+  height: 460px;
 }
 
 .tile__item{
   display: flex;
   flex-direction: row ;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: var(--white);
   background: #343434;
   border-radius: 33px;
   width: 1219px;
   height: 370px;
   margin: 15px;
+  overflow: hidden;
 }
 
 .tile{
@@ -806,6 +805,7 @@ a .header{
   flex-direction: row ;
   align-items: center;
   justify-content: center;
+
 }
 
 .lists{
@@ -846,4 +846,47 @@ footer{
 .block p{
   margin-left:10%;
   width:200px;
+}
+
+.btn--secondary :hover{
+  color: var(--white);
+  background-color: var(--black);
+}
+
+@media screen and (max-width: 786px){
+  .header_nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0,0,0,0);
+    transform: translate(-100%,0);
+    transition: all .3s ease-in;
+  }
+
+
+.header_nav .active{
+  transform: translate(0,0);
+}
+
+.header_nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_nav a {
+  font-size: var(--font-size-menu);
+}
+
+.header_nav li:not(:last-child){
+  margin-bottom: 2rem;
+}
+
 }
