@@ -37,7 +37,15 @@
                     <button class="header__burger"><svg width="44" height="27" viewBox="0 0 44 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0.25H44V4.66667H0V0.25ZM11 11.2917H44V15.7083H11V11.2917ZM24.75 22.3333H44V26.75H24.75V22.3333Z" fill="white"/>
                         </svg>
-                        </button>
+                    </button>
+
+                    <button class="header__close">
+                        <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="-1.5" x2="33.9353" y2="-1.5" transform="matrix(0.707228 0.706986 -0.707228 0.706986 3 3)" stroke="white" stroke-width="3"/>
+                            <line y1="-1.5" x2="33.9353" y2="-1.5" transform="matrix(0.707228 -0.706986 0.707228 0.706986 3 27)" stroke="white" stroke-width="3"/>
+                        </svg>
+                    </button>
+
                 </div>
             </div>
         </header>
@@ -64,7 +72,8 @@
                         <h2>FEATURES</h2>
                         <p>Most calendars are designed for teams. Slate is designed for <br> freelancers who want a simple way to plan their schedule.</p>
                     </div>
-                    <div class="feat__items_img">
+                    <d
+                    iv class="feat__items_img">
                         <div class="features_image">
                             <img class="features_image1" src="img/features_image.png" alt="kartinka">
                             <img class="features_image2" src="img/Line Chart 4.png" alt="">
@@ -127,16 +136,17 @@
                         <p>We focus on ergonomics and meeting you where you work. <br> It's only a keystroke away.</p>
                     </div>
                     <div class="gallery__items">
-                        <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
-                        <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
-                        <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
-                        <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
-                    </div>
-                        <br>
-                    <div class="gallery__items">
-                        <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
-                        <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
-                        <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                        <div class="gallery__items1">
+                            <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                            <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                            <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                            <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                        </div>
+                        <div class="gallery__items2">
+                            <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                            <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                            <div class="gallery__item"><img src="img/Card.jpg" alt=""></div>
+                        </div>
                     </div>
                     <div class="action">
                             <a href="#" class="btn btn--secondary">See more</a>
@@ -323,19 +333,18 @@
         </footer>
 
         <script>
-            let headerOpen = document.querySelector('.header_burger');
-            let headerClose = document.querySelector('.header_close');
+            let headerOpen = document.querySelector('.header__burger');
+            let headerClose = document.querySelector('.header__close');
             let headerNav = document.querySelector('.header_nav');
 
             headerOpen.addEventListener('click', function(e){
                 headerNav.classList.add('active');
-
-            });
+            },false);
 
             headerClose.addEventListener('click', function(e){
                 headerNav.classList.remove('active');
 
-            });
+            },false);
         </script>
 
     </body>
