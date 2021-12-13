@@ -17,6 +17,15 @@
                     <img src="img/logo.svg" alt="logo" width="186" height="58">
                 </div>
                 <div class="header_nav">
+                    <div class="buttonHeaderNav">
+                        <button class="header__close">
+                            <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="-1.5" x2="33.9353" y2="-1.5" transform="matrix(0.707228 0.706986 -0.707228 0.706986 3 3)" stroke="white" stroke-width="3"/>
+                                <line y1="-1.5" x2="33.9353" y2="-1.5" transform="matrix(0.707228 -0.706986 0.707228 0.706986 3 27)" stroke="white" stroke-width="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="buttonHeaderNavUl">
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -31,6 +40,7 @@
                             <a href="#">Contact</a>
                         </li>
                     </ul>
+                    </div>
                 </div>
                 <div class="header_action">
                     <a href="#" class="btn btn--secondary">Login</a>
@@ -39,12 +49,7 @@
                         </svg>
                     </button>
 
-                    <button class="header__close">
-                        <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="-1.5" x2="33.9353" y2="-1.5" transform="matrix(0.707228 0.706986 -0.707228 0.706986 3 3)" stroke="white" stroke-width="3"/>
-                            <line y1="-1.5" x2="33.9353" y2="-1.5" transform="matrix(0.707228 -0.706986 0.707228 0.706986 3 27)" stroke="white" stroke-width="3"/>
-                        </svg>
-                    </button>
+                    
 
                 </div>
             </div>
@@ -339,12 +344,11 @@
 
             headerOpen.addEventListener('click', function(e){
                 headerNav.classList.add('active');
-            },false);
+            });
 
             headerClose.addEventListener('click', function(e){
                 headerNav.classList.remove('active');
-
-            },false);
+            });
         </script>
 
     </body>
